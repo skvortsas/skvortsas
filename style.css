@@ -1,0 +1,128 @@
+@media screen and (min-width:881px){
+	.kek{
+		display: none;
+	}
+}
+
+@media screen and (max-width: 880px){
+	.Photos{
+		display: none;
+	}
+	
+	.kek{
+		display: none;
+	}
+}
+
+@media screen and (min-width:720px) and (max-width: 880px){
+	.Posts{
+		margin-left: 8%;
+	}
+	
+	.kek{
+		display:none;
+	}
+}
+
+@media screen and (min-width:620px) and (max-width: 719px){
+	.Posts{
+		margin-left:15%;
+	}
+	
+	.kek{
+		display:none;
+	}
+}
+
+@media screen and (min-width: 520px) and (max-width: 619px){
+	.Posts{
+		margin-left:25%;
+	}
+	
+	.kek{
+		display:none;
+	}
+}
+@media screen and (min-width:300px) and (max-width: 519px){
+	.Posts{
+		width: 50px;
+		margin-left:75%
+	}
+	
+	.ok{
+		display:none;
+	}
+
+	.kek{
+		display:flex;
+	}
+}
+
+@media screen and (max-width:299px){
+	.Posts{
+		display:none;
+	}
+}
+
+body{
+	background: #edeef0;
+}
+
+.Left{
+	float: left;
+	height: 100%;
+	width: 30%;
+}
+
+.ProfilePhotoSpace{
+	background: #fff;
+	margin-left: 20%;
+	height: 200px;
+	width: 200px;
+}
+
+.ProfilePhoto{
+	background: #edf10a;
+	margin: 20px;
+	height: 80%;
+	width: 80%;
+	text-align: center;
+}
+
+.Menu{
+	margin-top: 5px;
+	display:table;
+	margin-left: 40%;
+}
+
+.Menu a{
+	display:table-cell;
+	text-align:center;
+	height: 40px;
+}
+
+.Menu a:hover{
+	background: #ffaa11;
+}
+
+.Right{
+	height: 100%;
+	margin-left: 30%;
+}
+
+.Photos{
+	background: #fff;
+	height: 150px;
+	width: 600px;
+}
+
+.Posts{
+	margin-top: 40px;
+
+}
+
+.Post{
+	margin-top: 20px;
+	background: #fff;
+	height: 300px;
+}
