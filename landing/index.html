@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+	<title>keke</title>
+	      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+		<link href="css/style.css" rel="stylesheet">
+	  
+      <!--Let browser know website is optimized for mobile-->
+
+    </head>
+
+    <body>
+	
+	<nav>
+		<div class="nav-wrapper blue-grey">
+			<a href="#" class="brand-logo center">Грызуны</a>
+		</div>
+	</nav>
+	
+	<div class="container">
+	
+	<h3 class="center">Если Ваш ребенок:</h3>
+	
+	<div class="row">
+		<div class="col s12 m4 center">
+			<i class="large material-icons blue-grey circle">mood_bad</i>
+			<h5>Агрится по пустякам?</h5>
+		</div>
+		
+		<div class="col s12 m4 center">
+			<i class="large material-icons blue-grey circle">mouse</i>
+			<h5>Ломает по мышке в день?</h5>
+		</div>
+		
+		<div class="col s12 m4 center">
+			<i class="large material-icons blue-grey circle">child_care</i>
+			<h5>Не Ваш ребенок?</h5>
+		</div>
+	</div>
+	
+	<h3 class="center">Тогда купите ему это shit</h3>
+	
+	<div class="slider">
+		<ul class="slides">
+			<li>
+				<img src="slides/1.jpg">
+				<div class="caption center-align">
+					<h4>Надежна!</h4>
+					<h5 class="orange-text text-darken-4">наша мышь сама втащит малому</h5>
+				</div>
+			</li>
+			
+			<li>
+				<img src="slides/2.jpg">
+				<div class="caption right-align">
+					<h4 class="indigo-text text-darken-4">Не требовательна!</h4>
+					<h5 class="indigo-text text-darken-4">она за Вас подкрутит счетчики за электричество</h5>
+				</div>
+			</li>
+			
+			<li>
+				<img src="slides/3.jpg">
+				<div class="caption right-align">
+					<h4 class="green-text text-darken-4">Быстрая!</h4>
+					<h5 class="green-text text-darken-4">Усейн Болт нервно курит в столовке</h5>
+				</div>
+			</li>
+			
+			<li>
+				<img src="slides/4.jpg">
+				<div class="caption center-align">
+					<h3>Гарантия 100500 лет!</h3>
+					<h5>кому это вообще интересно???</h5>
+				</div>
+			</li>
+		</ul>
+	</div>
+	
+	<h3 class="center">Уже захотели эту мышь?</h3>
+	
+	<div class="row">
+		<div class="col s12 m4 center">
+			<a class="btn" onclick="Materialize.toast('Тогда заполняй форму ниже!', 4000)">Ясен пень!</a>
+		</div>
+		
+		<div class="col s12 m4 center">
+			<a class="btn" onclick="Materialize.toast('Ну че ты, нормально же общались', 4000)">Ну не знааю!</a>
+		</div>
+		
+		<div class="col s12 m4 center">
+			<a class="btn" onclick="Materialize.toast('Прощайся с мышькой, кек', 4000)">Не-а!</a>
+		</div>
+	</div>
+	
+	<div class="row">
+		<form class="col s12">
+			<div class="row">
+				<div class="input-field col s6 offset-s2">
+					<i class="material-icons prefix">account_circle</i>
+					<input id="First_name" type="text" class="validate">
+					<label for="First_name">Как Вас зовут?</label>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="input-field col s6 offset-s2">
+					<i class="material-icons prefix">contact_mail</i>
+					<input id="Email" type="email" class="validate">
+					<label for="Email" data-error="ниправда" data-success="красава">Не наклоняйся за мылом!</label>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="input-field col s6 offset-s2">
+					<i class="material-icons prefix">phone</i>
+					<input id="Phone" type="tel" class="validate">
+					<label for="Phone">Номерочек подкинь</label>
+				</div>
+			</div>
+			
+			<a class="btn" onclick="Materialize.toast('мышка уже едет к тебе!', 4000)">Дайте мне эту мышь</a>
+		</form>
+		
+		
+	</div>
+	
+	</div>
+	
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+	  
+	  <script>
+$(document).ready(function(){
+ $('.slider').slider();
+	});
+</script>
+	  
+    </body>
+  </html>
+        
