@@ -1,68 +1,11 @@
-@media screen and (min-width:881px){
-	.kek{
-		display: none;
-	}
-}
-
-@media screen and (max-width: 880px){
+@media only screen and (min-width: 721px) and (max-width: 880px){
 	.Photos{
 		display: none;
 	}
 	
-	.kek{
-		display: none;
-	}
+
 }
 
-@media screen and (min-width:720px) and (max-width: 880px){
-	.Posts{
-		margin-left: 8%;
-	}
-	
-	.kek{
-		display:none;
-	}
-}
-
-@media screen and (min-width:620px) and (max-width: 719px){
-	.Posts{
-		margin-left:15%;
-	}
-	
-	.kek{
-		display:none;
-	}
-}
-
-@media screen and (min-width: 520px) and (max-width: 619px){
-	.Posts{
-		margin-left:25%;
-	}
-	
-	.kek{
-		display:none;
-	}
-}
-@media screen and (min-width:300px) and (max-width: 519px){
-	.Posts{
-		width: 50px;
-		margin-left:75%
-	}
-	
-	.ok{
-		display:none;
-	}
-
-	.kek{
-		display:flex;
-	}
-}
-
-@media screen and (max-width:299px){
-	.Posts{
-		display:none;
-	}
-}
 
 body{
 	background: #edeef0;
@@ -76,9 +19,9 @@ body{
 
 .ProfilePhotoSpace{
 	background: #fff;
-	margin-left: 20%;
 	height: 200px;
 	width: 200px;
+	margin:auto;
 }
 
 .ProfilePhoto{
@@ -92,7 +35,7 @@ body{
 .Menu{
 	margin-top: 5px;
 	display:table;
-	margin-left: 40%;
+	margin-left: 50%;
 }
 
 .Menu a{
@@ -106,8 +49,11 @@ body{
 }
 
 .Right{
+	float:right;
 	height: 100%;
-	margin-left: 30%;
+	margin-right: auto;
+	width: 70%;
+
 }
 
 .Photos{
@@ -118,6 +64,7 @@ body{
 
 .Posts{
 	margin-top: 40px;
+	margin-left: auto;
 
 }
 
@@ -125,4 +72,21 @@ body{
 	margin-top: 20px;
 	background: #fff;
 	height: 300px;
+}
+
+@media only screen and (max-width: 720px){
+
+	.Photos{
+		display:none;
+	}
+
+	.Left {
+		width: 100%;
+		height: auto;
+
+	}
+
+	.Right{
+		width: 100%;
+	}
 }
