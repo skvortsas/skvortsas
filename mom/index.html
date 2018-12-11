@@ -1,4 +1,4 @@
-
+﻿
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,111 +8,142 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=f5b4db09-e731-4a65-bb5d-e65ec0298952" type="text/javascript"></script>
 
+   
     <!--Let browser know website is optimized for mobile-->
     
 </head>
 
 <body>
-
-    <nav class="teal lighten-2">
-        <div class="nav-wrapper">
-            <a href="#" class="brand-logo center"><img src="images/m.png"></a>
-        </div>
-    </nav>
-
     <div class="parallax-container">
         <div class="parallax"><img src="images/1.jpg"></div>
     </div>
-    <div class="row">
-        <div class="col s5">
-            <p>�����������</p>
+    <div class="row col s12">
+        <p></p>
+        <div class="col s4">
+            <div class="row col s12">
+                <div class="input-field col s12">
+                    <i class="material-icons prefix">flight_takeoff</i>
+                    <input id="from" type="text" class="validate">
+                    <label for="from">Откуда?</label>
+                </div>
+            </div>
+
+            <div class="row col s12">
+                <div class="input-field col s12">
+                    <i class="material-icons prefix">flight_land</i>
+                    <input id="to" type="text" class="validate">
+                    <label for="to">Куда?</label>
+                </div>
+            </div>
+            <div class="row col s12">
+                <div class="input-field col s12">
+                    <i class="material-icons prefix">widgets</i>
+                    <input id="weight" type="text" class="validate">
+                    <label for="weight">Сколько весит?(кг)</label>
+                </div>
+            </div>
+            <div class="row col s12">
+                <div class="input-field col s12">
+                    <i class="material-icons prefix">zoom_out_map</i>
+                    <input id="size" type="text" class="validate">
+                    <label for="size">Какой объем?(м 3)</label>
+                </div>
+            </div>
+            <div class="row col s6 offset-s4">
+                <button class="btn waves-effect waves-default deep-orange darken-3 " onclick="LoadModal()" href="#modal1">это кнопка</button>
+            </div>
         </div>
-        <div class="col s7">
-            <p>blah-blah</p>
-            <p>blah-blah</p>
-            <p>blah-blah</p>
-            <p>blah-blah</p>
-            <p>blah-blah</p>
-            <p>blah-blah</p>
-            <p>blah-blah</p>
-            <p>blah-blah</p>
-            <p>blah-blah</p>
-            <p>blah-blah</p>
-            <p>blah-blah</p>
-            <p>blah-blah</p>
-            <p>blah-blah</p>
+        <div class="col s8 z-depth-5">
+            <p><h4 class="center">Мы - компания с многолетним стажем,</h4></p>
+            <p><h4 class="center">которая была основана в 2003 году.</h4></p>
+            <p><h4 class="center">На нашем счету тысячи перевозок;</h4></p>
+            <p><h4 class="center">с нами работают такие компании как: "Жесткие пацаны".</h4></p>
+            <p><h4 class="center">А еще у нас миллиард сотрудников, так что мы ответим на Ваш звонок в любое время.</h4></p>
+            <p><h4 class="center">Нужно еще что-то написать, потому что мне нужно заполнить пустое место, чтобы было красиво.</h4></p>
         </div>
-    </div>
-    <div class="parallax-container">
+
+            <div id="modal1" class="modal">
+                
+                <div class="modal-content">            
+                        <h4 class="center">Примерная стоимость</h4>
+                    <p id="cost"class="center"></p>
+                    <div class="col s6 offset-s2">
+                        <div id="map" style="width: 600px; height: 400px"></div>
+                    </div>
+                    <div class="col s12">
+                        <p class="center">Чтобы узнать точную цену позвоните по телефону или заполните форму ниже, чтобы Вам позвонил наш оператор</p>
+                    </div>
+                    <div class="col s12">
+                        <div class="modal-footer">
+                            <a href="#!" class="modal-close waves-effect waves-green btn-flat" id="OK">Ок</a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        </div>
+    <div class="parallax-container col s12">
         <div class="parallax"><img src="images/2.jpg"></div>
     </div>
 
-    <div class="row">
-        <div class="col s5">
-            <p>������ ��?</p>
-            <p><i class="small material-icons">looks_one</i></p>
-            <p><i class="small material-icons">looks_two</i></p>
-            <p><i class="small material-icons">looks_3</i></p>
-            <p><i class="small material-icons">looks_4</i></p>
-            <p><i class="small material-icons">looks_5</i></p>
-            <p><i class="small material-icons">looks_6</i></p>
+    
+    <div class="container">
+    <div class="row z-depth-5">
+        <p><h4 class="center">Почему мы?</h4></p>
+        <div class="row col s4 center">
+            <p><i class="large material-icons">beenhere</i></p>
+            <p class="center"><h5>Опыт</h5></p>
+            <p class="center"><h6>Работа с известными брендами</h6></p>
         </div>
-
-        <div class="col s7">
-            <p>blah-blah</p>
-            <p>blah-blah</p>
-            <p>blah-blah</p>
-            <p>blah-blah</p>
-            <p>blah-blah</p>
-            <p>blah-blah</p>
-            <p>blah-blah</p>
-            <p>blah-blah</p>
-            <p>blah-blah</p>
-            <p>blah-blah</p>
-            <p>blah-blah</p>
-            <p>blah-blah</p>
-            <p>blah-blah</p>
+        <div class="row col s4 center">
+            <p><i class="large material-icons">alarm_on</i></p>
+            <p class="center"><h5>Ответственность</h5></p>
+            <p class="center"><h6>Всегда все в срок</h6></p>
+        </div>
+        <div class="row col s4 center">
+            <p><i class="large material-icons">attach_money</i></p>
+            <p class="center"><h5>Цена</h5></p>
+            <p class="center"><h6>Самые доступные цены</h6></p>
         </div>
     </div>
-
-    <div class="parallax-container">
-        <div class="parallax"><img src="images/3.jpg"></div>
-    </div>
-
-    <div class="row">
-        <form class="col s6 offset-s3 center">
-            <div class="row">
-                <div class="input-field">
-                    <i class="material-icons prefix">account_circle</i>
-                    <input id="First_name" type="text" class="validate">
-                    <label for="First_name">��� ���� �����?</label>
+        <form action="" method="post">
+            <div class="container">
+                <div class="row">
+                    <div class="input-fiel col s8 offset-s2">
+                        <i class="material-icons prefix">account_circle</i>
+                        <input id="First_name" type="text" class="validate">
+                        <label for="First_name">контакты</label>
+                    </div>
                 </div>
-            </div>
 
-            <div class="row">
-                <div class="input-field">
-                    <i class="material-icons prefix">contact_mail</i>
-                    <input id="Email" type="email" class="validate">
-                    <label for="Email" data-error="����� �����?" data-success="�������">�� ����� ����!</label>
+                <div class="row">
+                    <div class="input-fiel col s8 offset-s2">
+                        <i class="material-icons prefix">contact_mail</i>
+                        <input id="Email" type="email" class="validate">
+                        <label for="Email" data-error="неправильно" data-success="правильно">почта</label>
+                    </div>
                 </div>
-            </div>
 
-            <div class="row">
-                <div class="input-field">
-                    <i class="material-icons prefix">phone</i>
-                    <input id="Phone" type="tel" class="validate">
-                    <label for="Phone">������� ���������</label>
+                <div class="row">
+                    <div class="input-fiel col s8 offset-s2">
+                        <i class="material-icons prefix">phone</i>
+                        <input id="Phone" type="tel" class="validate">
+                        <label for="Phone">телефон</label>
+                    </div>
                 </div>
+
+                <div class="center">
+                    <input type="submit" name="submit" value="Кнопка" class="btn" />
+                </div>
+
+
             </div>
-
-            <a class="btn" onclick="Materialize.toast('�� ��� ����� � ���� ����� �������!', 2000)">�������� ������</a>
-        </form>
-    </div>
-
-
+            </form>
+</div>
+    <p></p>
     <footer class="page-footer">
-            <p class="center">�� �������� � 1000 �. �� �.�.</p>
+            
     </footer>
     <!--JavaScript at end of body for optimized loading-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
@@ -123,5 +154,100 @@ $(document).ready(function(){
  $('.parallax').parallax();
 	});
     </script>
+
+    <script>
+        ymaps.ready(function (){
+            var suggestView = new ymaps.SuggestView('from');
+            var suggestView = new ymaps.SuggestView('to');
+           })
+    </script>
+
+
+    <script type="text/javascript">
+        function LoadModal() {
+            var from = document.getElementById("from").value;
+            var to = document.getElementById("to").value;
+            var weight = document.getElementById("weight").value;
+            var size = document.getElementById("size").value;
+            if (from.length == 0 || to.length == 0 || weight.length == 0 || size.length == 0) {
+                alert("Заполните все поля, пожалуйста");
+            } else if (weight == 0) {
+                alert("Заполните поле веса, пожалуйста");
+            } else if (size == 0) {
+                alert("Заполните поле объема, пожалуйста");
+            } else {
+                        var elem = document.querySelector('.modal');
+                        var instance = M.Modal.init(elem);
+                        instance.open();
+                        ymaps.ready(init);
+                    }
+        }
+
+            
+        function init() {
+            var lenghtCost = 57;
+            var from = document.getElementById("from").value;
+            var to = document.getElementById("to").value;
+            var myMap = new ymaps.Map("map", {
+                center: [53.1311, 36.576128],
+                zoom: 5
+            }, {
+                searchControlProvider: 'yandex#search'
+            }),
+            // Признак начала редактирования маршрута.
+            startEditing = false;
+
+            ymaps.route([
+                from,
+                // Метро "Третьяковская".
+               { type: 'wayPoint', point: to }
+            ], {
+                // Автоматически позиционировать карту.
+                mapStateAutoApply: true
+            }).then(function (route) {
+                var cost = Number((route.getLength() / 1000 * lenghtCost).toFixed(2)) + ' рубасиков';
+                document.getElementById("cost").innerHTML = cost;
+                myMap.geoObjects.add(route);
+                route.editor.events.add(["waypointadd", "waypointremove", "start"], function () {
+                    if (route.getWayPoints().getLength() >= 10) {
+                        // Если на карте больше 9 точек маршрута, отключаем добавление новых точек.
+                        route.editor.start({ addWayPoints: false, removeWayPoints: true });
+                    }
+                    else {
+                        // Включаем добавление новых точек.
+                        route.editor.start({ addWayPoints: true, removeWayPoints: true });
+                    }
+                })
+            }, function (error) {
+                alert("Возникла ошибка: " + error.message);
+            });
+
+            document.getElementById('OK').onclick = function () {
+                // Для уничтожения используется метод destroy.
+                myMap.destroy();
+            }
+        }
+            
+    </script>
+
+
+    <script>
+        function CheckForInput() {
+            var from = document.getElementById("from").value;
+            var to = document.getElementById("to").value;
+            var weight = document.getElementById("weight").value;
+            var size = document.getElementById("size").value;
+            if (from.length == 0 || to.length == 0 || weight.length == 0 || size.length == 0) {
+                alert("Заполните все поля, пожалуйста");
+            } else if (weight == 0) {
+                alert("Заполните все поля, пожалуйста");
+            } else if (size == 0) {
+                alert("Заполните все поля, пожалуйста");
+            } else {
+            }
+        }
+    </script>
+
+
 </body>
 </html>
